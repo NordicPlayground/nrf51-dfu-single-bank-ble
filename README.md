@@ -15,6 +15,15 @@ Modification needed on the PC software to wait at least 10 seconds before sendin
 
 Tested with Android nRFToolbox, nRFMaster Control Panel, iOS Loader, iOS nRFToolbox
 
+Requirements
+------------
+- nRF51 SDK version 5.2.0
+- nRF51822 Development Kit version 2.1.0 or later
+
+The project may need modifications to work with other versions or other boards. 
+
+To compile it, clone the repository in the \nrf51822\Board\nrf6310\device_firmware_updates folder.
+
 About this project
 ------------------
 This application is one of several applications that has been built by the support team at Nordic Semiconductor, as a demo of some particular feature or use case. It has not necessarily been thoroughly tested, so there might be unknown issues. It is hence provided as-is, without any warranty. 
