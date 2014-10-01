@@ -113,18 +113,27 @@ __Vectors_Size  EQU     __Vectors_End - __Vectors
 
 ; Reset Handler
 
-NRF_POWER_RAMON_ADDRESS           EQU   0x40000524  ; NRF_POWER->RAMON address
-NRF_POWER_RAMON_RAMxON_ONMODE_Msk EQU   0x3         ; All RAM blocks on in onmode bit mask
+NRF_POWER_RAMON_ADDRESS            EQU   0x40000524  ; NRF_POWER->RAMON address
+NRF_POWER_RAMONB_ADDRESS           EQU   0x40000554  ; NRF_POWER->RAMONB address
+NRF_POWER_RAMONx_RAMxON_ONMODE_Msk EQU   0x3         ; All RAM blocks on in onmode bit mask
 
 Reset_Handler   PROC
                 EXPORT  Reset_Handler             [WEAK]
                 IMPORT  SystemInit
                 IMPORT  __main
+                
+                MOVS    R1, #NRF_POWER_RAMONx_RAMxON_ONMODE_Msk
+                
                 LDR     R0, =NRF_POWER_RAMON_ADDRESS
                 LDR     R2, [R0]
-                MOVS    R1, #NRF_POWER_RAMON_RAMxON_ONMODE_Msk
                 ORRS    R2, R2, R1
                 STR     R2, [R0]
+                
+                LDR     R0, =NRF_POWER_RAMONB_ADDRESS
+                LDR     R2, [R0]
+                ORRS    R2, R2, R1
+                STR     R2, [R0]
+                
                 LDR     R0, =SystemInit
                 BLX     R0
                 LDR     R0, =__main

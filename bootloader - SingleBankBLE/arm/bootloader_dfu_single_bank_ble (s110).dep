@@ -1,429 +1,408 @@
 Dependencies for Project 'bootloader', Target 'dfu_single_bank_ble (s110)': (DO NOT MODIFY !)
-F (.\..\..\..\..\..\Source\templates\system_nrf51.c)(0x5321C01E)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\system_nrf51.o --omf_browse .\_build\system_nrf51.crf --depend .\_build\system_nrf51.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\nrf.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51_deprecated.h)(0x5321C01E)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-F (..\arm_startup_nrf51.s)(0x5321BF3E)(--cpu Cortex-M0 --li -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include--list .\_build\arm_startup_nrf51.lst --xref -o .\_build\arm_startup_nrf51.o --depend .\_build\arm_startup_nrf51.d)
-F (.\..\main.c)(0x53A05CA3)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\main.o --omf_browse .\_build\main.crf --depend .\_build\main.d)
-I (..\include\dfu.h)(0x53A052F3)
-I (..\include\dfu_types.h)(0x53A05D28)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
+F (.\..\..\..\..\..\Source\templates\system_nrf51.c)(0x53B29B14)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\system_nrf51.o --omf_browse .\_build\system_nrf51.crf --depend .\_build\system_nrf51.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (..\..\..\..\..\Include\nrf.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51.h)(0x542ABD30)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (..\..\..\..\..\Include\system_nrf51.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51_deprecated.h)(0x53B29B14)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+F (..\arm_startup_nrf51.s)(0x53B29A34)(--cpu Cortex-M0 --li -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include--list .\_build\arm_startup_nrf51.lst --xref -o .\_build\arm_startup_nrf51.o --depend .\_build\arm_startup_nrf51.d)
+F (.\..\main.c)(0x53B29A34)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\main.o --omf_browse .\_build\main.crf --depend .\_build\main.d)
+I (..\include\dfu.h)(0x542ABEA4)
+I (..\include\dfu_types.h)(0x53D79DD8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (..\..\..\..\..\Include\nrf51.h)(0x542ABD30)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (..\..\..\..\..\Include\system_nrf51.h)(0x53B29B14)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (..\include\dfu_transport.h)(0x53B29A34)
+I (..\..\..\..\..\Include\s110\ble.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_types.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_err.h)(0x53A149A6)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (..\include\dfu_transport.h)(0x5321BF3C)
-I (..\..\..\..\..\Include\s110\ble.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_types.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gap.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_err.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x52DD27A6)
-I (..\include\bootloader.h)(0x5321BF3C)
-I (..\include\bootloader_types.h)(0x5321BF3C)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\nordic_common.h)(0x5321BF16)
-I (..\..\..\..\..\Include\nrf.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51_deprecated.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf_gpio.h)(0x5321BF12)
-I (..\..\..\..\..\Include\s110\ble_hci.h)(0x528E92F0)
-I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x5321BF10)
-I (..\..\..\..\..\Include\app_common\app_timer.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\app_common\app_gpiote.h)(0x5321BF10)
-I (..\..\..\..\..\Include\boards.h)(0x5321BF12)
-I (..\..\..\..\..\Include\boards/nrf6310.h)(0x5321BF16)
-I (..\..\..\..\..\Include\ble\ble_debug_assert_handler.h)(0x5321BF12)
-I (..\..\..\..\..\Include\sd_common\softdevice_handler.h)(0x5321BF16)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\s110\nrf_sdm.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x5314A52E)
+I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x53A149A6)
+I (..\include\bootloader.h)(0x53B29A34)
+I (..\include\bootloader_types.h)(0x53B29A34)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5284C88A)
+I (..\..\..\..\..\Include\nordic_common.h)(0x53B299D6)
+I (..\..\..\..\..\Include\nrf.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51_deprecated.h)(0x53B29B14)
+I (..\..\..\..\..\Include\s110\nrf_mbr.h)(0x53A149A6)
+I (..\..\..\..\..\Include\app_common\app_error.h)(0x53B299DC)
+I (..\..\..\..\..\Include\nrf_gpio.h)(0x53B299DE)
+I (..\..\..\..\..\Include\s110\ble_hci.h)(0x53A149A6)
+I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x53B299DC)
+I (..\..\..\..\..\Include\app_common\app_timer.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5284C884)
+I (..\..\..\..\..\Include\app_common\app_gpiote.h)(0x53B299DC)
+I (..\..\..\..\..\Include\boards.h)(0x53B299E8)
+I (..\..\..\..\..\Include\boards/nrf6310.h)(0x53B299EA)
+I (..\..\..\..\..\Include\ble\ble_debug_assert_handler.h)(0x53B299EA)
+I (..\..\..\..\..\Include\sd_common\softdevice_handler.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5284C88A)
+I (..\..\..\..\..\Include\s110\nrf_sdm.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x536444CC)
 I (..\..\..\..\..\Include\s110\nrf_error_sdm.h)(0x529C6074)
-I (..\..\..\..\..\Include\sd_common\ble_stack_handler_types.h)(0x5321BF16)
-I (..\..\..\..\..\Include\sd_common\ant_stack_handler_types.h)(0x5321BF16)
-I (..\include\pstorage_platform.h)(0x5321BF3E)
-F (..\dfu_single_bank.c)(0x53A05CA3)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\dfu_single_bank.o --omf_browse .\_build\dfu_single_bank.crf --depend .\_build\dfu_single_bank.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
+I (..\..\..\..\..\Include\sd_common\ble_stack_handler_types.h)(0x53B299DA)
+I (..\..\..\..\..\Include\sd_common\ant_stack_handler_types.h)(0x53B299DA)
+I (..\include\pstorage_platform.h)(0x53B29A34)
+F (..\dfu_single_bank.c)(0x542AC117)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\dfu_single_bank.o --omf_browse .\_build\dfu_single_bank.crf --depend .\_build\dfu_single_bank.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5284C88A)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (..\..\..\..\..\Include\app_common\app_error.h)(0x53B299DC)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (..\include\bootloader.h)(0x5321BF3C)
-I (..\include\bootloader_types.h)(0x5321BF3C)
-I (..\include\dfu_types.h)(0x53A05D28)
-I (..\..\..\..\..\Include\ble\ble_flash.h)(0x5321BF12)
-I (..\..\..\..\..\Include\app_common\crc16.h)(0x5321BF10)
-I (..\include\dfu.h)(0x53A052F3)
-I (..\..\..\..\..\Include\nrf.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51_deprecated.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\pstorage.h)(0x5321BF10)
-I (..\include\pstorage_platform.h)(0x5321BF3E)
-F (..\bootloader.c)(0x5321BF3E)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\bootloader.o --omf_browse .\_build\bootloader.crf --depend .\_build\bootloader.d)
-I (..\include\bootloader.h)(0x5321BF3C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (..\include\bootloader_types.h)(0x5321BF3C)
-I (..\include\dfu_types.h)(0x53A05D28)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
+I (..\include\bootloader.h)(0x53B29A34)
+I (..\include\bootloader_types.h)(0x53B29A34)
+I (..\include\dfu_types.h)(0x53D79DD8)
+I (..\..\..\..\..\Include\nrf51.h)(0x542ABD30)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (..\..\..\..\..\Include\system_nrf51.h)(0x53B29B14)
+I (..\..\..\..\..\Include\ble\ble_flash.h)(0x53B299E8)
+I (..\..\..\..\..\Include\app_common\crc16.h)(0x53B299DC)
+I (..\include\dfu.h)(0x542ABEA4)
+I (..\..\..\..\..\Include\nrf.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51_deprecated.h)(0x53B29B14)
+I (..\..\..\..\..\Include\app_common\pstorage.h)(0x53B299DC)
+I (..\include\pstorage_platform.h)(0x53B29A34)
+F (..\bootloader.c)(0x53B29A34)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\bootloader.o --omf_browse .\_build\bootloader.crf --depend .\_build\bootloader.d)
+I (..\include\bootloader.h)(0x53B29A34)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (..\include\bootloader_types.h)(0x53B29A34)
+I (..\include\dfu_types.h)(0x53D79DD8)
+I (..\..\..\..\..\Include\nrf51.h)(0x542ABD30)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (..\..\..\..\..\Include\system_nrf51.h)(0x53B29B14)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5284C88A)
+I (..\include\bootloader_util.h)(0x53B29A34)
+I (..\include\dfu.h)(0x542ABEA4)
+I (..\include\dfu_transport.h)(0x53B29A34)
+I (..\..\..\..\..\Include\s110\ble.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_types.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_err.h)(0x53A149A6)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x52FE42FE)
-I (..\include\bootloader_util.h)(0x5321BF3C)
-I (..\include\dfu.h)(0x53A052F3)
-I (..\include\dfu_transport.h)(0x5321BF3C)
-I (..\..\..\..\..\Include\s110\ble.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_types.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gap.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_err.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\nrf_sdm.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x5321C01E)
-I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x5314A52E)
+I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x53A149A6)
+I (..\..\..\..\..\Include\app_common\app_error.h)(0x53B299DC)
+I (..\..\..\..\..\Include\s110\nrf_sdm.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x53B29B14)
+I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x536444CC)
 I (..\..\..\..\..\Include\s110\nrf_error_sdm.h)(0x529C6074)
-I (..\..\..\..\..\Include\ble\ble_flash.h)(0x5321BF12)
-I (..\..\..\..\..\Include\nordic_common.h)(0x5321BF16)
-I (..\..\..\..\..\Include\app_common\crc16.h)(0x5321BF10)
-I (..\..\..\..\..\Include\app_common\pstorage.h)(0x5321BF10)
-I (..\include\pstorage_platform.h)(0x5321BF3E)
-I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x5321BF10)
-F (..\bootloader_util_arm.c)(0x5321BF3E)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\bootloader_util_arm.o --omf_browse .\_build\bootloader_util_arm.crf --depend .\_build\bootloader_util_arm.d)
-I (..\include\bootloader_util.h)(0x5321BF3C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (..\include\bootloader_types.h)(0x5321BF3C)
-I (..\include\dfu_types.h)(0x53A05D28)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
+I (..\..\..\..\..\Include\ble\ble_flash.h)(0x53B299E8)
+I (..\..\..\..\..\Include\nordic_common.h)(0x53B299D6)
+I (..\..\..\..\..\Include\app_common\crc16.h)(0x53B299DC)
+I (..\..\..\..\..\Include\app_common\pstorage.h)(0x53B299DC)
+I (..\include\pstorage_platform.h)(0x53B29A34)
+I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x53B299DC)
+F (..\bootloader_util_arm.c)(0x53B29A34)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\bootloader_util_arm.o --omf_browse .\_build\bootloader_util_arm.crf --depend .\_build\bootloader_util_arm.d)
+I (..\include\bootloader_util.h)(0x53B29A34)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (..\include\bootloader_types.h)(0x53B29A34)
+I (..\include\dfu_types.h)(0x53D79DD8)
+I (..\..\..\..\..\Include\nrf51.h)(0x542ABD30)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (..\..\..\..\..\Include\system_nrf51.h)(0x53B29B14)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nordic_common.h)(0x53B299D6)
+F (..\..\..\..\..\Source\ble\ble_services\ble_dfu.c)(0x53B29978)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\ble_dfu.o --omf_browse .\_build\ble_dfu.crf --depend .\_build\ble_dfu.d)
+I (..\..\..\..\..\Include\ble\ble_services\ble_dfu.h)(0x53B299E8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_types.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_err.h)(0x53A149A6)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (..\..\..\..\..\Include\nordic_common.h)(0x5321BF16)
-F (..\..\..\..\..\Source\ble\ble_services\ble_dfu.c)(0x5321BEFE)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\ble_dfu.o --omf_browse .\_build\ble_dfu.crf --depend .\_build\ble_dfu.d)
-I (..\..\..\..\..\Include\ble\ble_services\ble_dfu.h)(0x5321BF12)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_types.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_err.h)(0x52DD27A6)
+I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\ble\ble_services\ble_srv_common.h)(0x53B299E8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nordic_common.h)(0x53B299D6)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5284C88A)
+F (..\..\..\..\..\Source\app_common\app_timer.c)(0x53B29966)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\app_timer.o --omf_browse .\_build\app_timer.crf --depend .\_build\app_timer.d)
+I (..\..\..\..\..\Include\app_common\app_timer.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5284C884)
+I (..\..\..\..\..\Include\app_common\app_error.h)(0x53B299DC)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_gap.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\ble\ble_services\ble_srv_common.h)(0x5321BF12)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
-I (..\..\..\..\..\Include\nordic_common.h)(0x5321BF16)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x52FE42FE)
-F (..\..\..\..\..\Source\app_common\app_timer.c)(0x5321BECC)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\app_timer.o --omf_browse .\_build\app_timer.crf --depend .\_build\app_timer.d)
-I (..\..\..\..\..\Include\app_common\app_timer.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5284C88A)
+I (..\..\..\..\..\Include\nrf51.h)(0x542ABD30)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (..\..\..\..\..\Include\system_nrf51.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x53B29B14)
+I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x536444CC)
+I (..\..\..\..\..\Include\nrf_delay.h)(0x53B299DE)
+I (..\..\..\..\..\Include\nrf.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51_deprecated.h)(0x53B29B14)
+I (..\..\..\..\..\Include\sd_common\app_util_platform.h)(0x53B299DC)
+F (..\..\..\..\..\Source\app_common\app_scheduler.c)(0x53B29968)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\app_scheduler.o --omf_browse .\_build\app_scheduler.crf --depend .\_build\app_scheduler.d)
+I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (..\..\..\..\..\Include\app_common\app_error.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x5321C01E)
-I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x5314A52E)
-I (..\..\..\..\..\Include\nrf_delay.h)(0x5321BF12)
-I (..\..\..\..\..\Include\nrf.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51_deprecated.h)(0x5321C01E)
-F (..\..\..\..\..\Source\app_common\app_scheduler.c)(0x5321BEC8)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\app_scheduler.o --omf_browse .\_build\app_scheduler.crf --depend .\_build\app_scheduler.d)
-I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5284C88A)
+I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\nrf51.h)(0x542ABD30)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (..\..\..\..\..\Include\system_nrf51.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x53B29B14)
+I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x536444CC)
+I (..\..\..\..\..\Include\nrf_assert.h)(0x53B299DE)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (..\..\..\..\..\Include\sd_common\app_util_platform.h)(0x53B299DC)
+F (..\..\..\..\..\Source\app_common\app_gpiote.c)(0x53B29968)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\app_gpiote.o --omf_browse .\_build\app_gpiote.crf --depend .\_build\app_gpiote.d)
+I (..\..\..\..\..\Include\app_common\app_gpiote.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (..\..\..\..\..\Include\nrf.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51.h)(0x542ABD30)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (..\..\..\..\..\Include\system_nrf51.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51_deprecated.h)(0x53B29B14)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (..\..\..\..\..\Include\app_common\app_error.h)(0x53B299DC)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x5321C01E)
-I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x5314A52E)
-I (..\..\..\..\..\Include\nrf_assert.h)(0x5321BF12)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-F (..\..\..\..\..\Source\app_common\app_gpiote.c)(0x5321BECC)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\app_gpiote.o --omf_browse .\_build\app_gpiote.crf --depend .\_build\app_gpiote.d)
-I (..\..\..\..\..\Include\app_common\app_gpiote.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\nrf.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51_deprecated.h)(0x5321C01E)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
-I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\nrf_gpio.h)(0x5321BF12)
-F (..\..\..\..\..\Source\app_common\crc16.c)(0x5321BEC8)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\crc16.o --omf_browse .\_build\crc16.crf --depend .\_build\crc16.d)
-I (..\..\..\..\..\Include\app_common\crc16.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x52FE42FE)
-F (..\..\..\..\..\Source\sd_common\softdevice_handler.c)(0x5321BEC8)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\softdevice_handler.o --omf_browse .\_build\softdevice_handler.crf --depend .\_build\softdevice_handler.d)
-I (..\..\..\..\..\Include\sd_common\softdevice_handler.h)(0x5321BF16)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\s110\nrf_sdm.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x528E92F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x5321C01E)
-I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x5314A52E)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5284C88A)
+I (..\..\..\..\..\Include\sd_common\app_util_platform.h)(0x53B299DC)
+I (..\..\..\..\..\Include\nrf_gpio.h)(0x53B299DE)
+F (..\..\..\..\..\Source\app_common\crc16.c)(0x53B2996A)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\crc16.o --omf_browse .\_build\crc16.crf --depend .\_build\crc16.d)
+I (..\..\..\..\..\Include\app_common\crc16.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5284C884)
+F (..\..\..\..\..\Source\sd_common\softdevice_handler.c)(0x53B299D4)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\softdevice_handler.o --omf_browse .\_build\softdevice_handler.crf --depend .\_build\softdevice_handler.d)
+I (..\..\..\..\..\Include\sd_common\softdevice_handler.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5284C88A)
+I (..\..\..\..\..\Include\nordic_common.h)(0x53B299D6)
+I (..\..\..\..\..\Include\s110\nrf_sdm.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\nrf51.h)(0x542ABD30)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (..\..\..\..\..\Include\system_nrf51.h)(0x53B29B14)
+I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x53A149A6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x53B29B14)
+I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x536444CC)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
 I (..\..\..\..\..\Include\s110\nrf_error_sdm.h)(0x529C6074)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
-I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x5321BF10)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-I (..\..\..\..\..\Include\sd_common\ble_stack_handler_types.h)(0x5321BF16)
-I (..\..\..\..\..\Include\s110\ble.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_types.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gap.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_err.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\sd_common\ant_stack_handler_types.h)(0x5321BF16)
-I (..\..\..\..\..\Include\nordic_common.h)(0x5321BF16)
-I (..\..\..\..\..\Include\nrf_assert.h)(0x5321BF12)
-F (..\..\..\..\..\Source\app_common\pstorage.c)(0x5321BECC)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\pstorage.o --omf_browse .\_build\pstorage.crf --depend .\_build\pstorage.d)
-I (..\..\..\..\..\Include\app_common\pstorage.h)(0x5321BF10)
-I (..\include\pstorage_platform.h)(0x5321BF3E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\nordic_common.h)(0x5321BF16)
+I (..\..\..\..\..\Include\app_common\app_error.h)(0x53B299DC)
+I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x53B299DC)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (..\..\..\..\..\Include\sd_common\ble_stack_handler_types.h)(0x53B299DA)
+I (..\..\..\..\..\Include\s110\ble.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_types.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_err.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x53A149A6)
+I (..\..\..\..\..\Include\sd_common\ant_stack_handler_types.h)(0x53B299DA)
+I (..\..\..\..\..\Include\nrf_assert.h)(0x53B299DE)
+F (..\..\..\..\..\Source\app_common\pstorage.c)(0x53B29966)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\pstorage.o --omf_browse .\_build\pstorage.crf --depend .\_build\pstorage.d)
+I (..\..\..\..\..\Include\app_common\pstorage.h)(0x53B299DC)
+I (..\include\pstorage_platform.h)(0x53B29A34)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5284C88A)
+I (..\..\..\..\..\Include\nordic_common.h)(0x53B299D6)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (..\..\..\..\..\Include\nrf_assert.h)(0x5321BF12)
-I (..\..\..\..\..\Include\nrf.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51_deprecated.h)(0x5321C01E)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x528E92F0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x5314A52E)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
-F (..\..\..\..\..\Source\app_common\hci_mem_pool.c)(0x5321BECE)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\hci_mem_pool.o --omf_browse .\_build\hci_mem_pool.crf --depend .\_build\hci_mem_pool.d)
-I (..\..\..\..\..\Include\app_common\hci_mem_pool.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
+I (..\..\..\..\..\Include\nrf_assert.h)(0x53B299DE)
+I (..\..\..\..\..\Include\nrf.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51.h)(0x542ABD30)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (..\..\..\..\..\Include\system_nrf51.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nrf51_deprecated.h)(0x53B29B14)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x53A149A6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x536444CC)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+F (..\..\..\..\..\Source\app_common\hci_mem_pool.c)(0x53B29968)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\hci_mem_pool.o --omf_browse .\_build\hci_mem_pool.crf --depend .\_build\hci_mem_pool.d)
+I (..\..\..\..\..\Include\app_common\hci_mem_pool.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (..\include\ble_transport\hci_mem_pool_internal.h)(0x5321BF3E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x52FE42FE)
-F (..\dfu_transport_ble.c)(0x53A05CA3)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\dfu_transport_ble.o --omf_browse .\_build\dfu_transport_ble.crf --depend .\_build\dfu_transport_ble.d)
-I (..\include\dfu_transport.h)(0x5321BF3C)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\s110\ble.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_types.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gap.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_err.h)(0x52DD27A6)
+I (..\include\ble_transport\hci_mem_pool_internal.h)(0x53B29A34)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5284C884)
+F (..\dfu_transport_ble.c)(0x542ABEA4)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\dfu_transport_ble.o --omf_browse .\_build\dfu_transport_ble.crf --depend .\_build\dfu_transport_ble.d)
+I (..\include\dfu_transport.h)(0x53B29A34)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (..\..\..\..\..\Include\s110\ble.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_types.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_err.h)(0x53A149A6)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x52DD27A6)
-I (..\include\dfu.h)(0x53A052F3)
-I (..\include\dfu_types.h)(0x53A05D28)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\s110\nrf_sdm.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x5321C01E)
-I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x5314A52E)
+I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x53A149A6)
+I (..\include\dfu.h)(0x542ABEA4)
+I (..\include\dfu_types.h)(0x53D79DD8)
+I (..\..\..\..\..\Include\nrf51.h)(0x542ABD30)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C80D2)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAB7D4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C80D2)
+I (..\..\..\..\..\Include\system_nrf51.h)(0x53B29B14)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (..\..\..\..\..\Include\s110\nrf_sdm.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_soc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\nrf51_bitfields.h)(0x53B29B14)
+I (..\..\..\..\..\Include\s110\nrf_error_soc.h)(0x536444CC)
 I (..\..\..\..\..\Include\s110\nrf_error_sdm.h)(0x529C6074)
-I (..\..\..\..\..\Include\nrf_gpio.h)(0x5321BF12)
-I (..\..\..\..\..\Include\sd_common\softdevice_handler.h)(0x5321BF16)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x5321BF10)
-I (..\..\..\..\..\Include\sd_common\ble_stack_handler_types.h)(0x5321BF16)
-I (..\..\..\..\..\Include\sd_common\ant_stack_handler_types.h)(0x5321BF16)
-I (..\..\..\..\..\Include\ble\ble_advdata.h)(0x5321BF12)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\s110\ble_hci.h)(0x528E92F0)
-I (..\..\..\..\..\Include\boards.h)(0x5321BF12)
-I (..\..\..\..\..\Include\boards/nrf6310.h)(0x5321BF16)
-I (..\..\..\..\..\Include\ble\ble_services\ble_dfu.h)(0x5321BF12)
-I (..\..\..\..\..\Include\ble\ble_services\ble_srv_common.h)(0x5321BF12)
-I (..\..\..\..\..\Include\nordic_common.h)(0x5321BF16)
-I (..\..\..\..\..\Include\app_common\app_timer.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\ble\ble_flash.h)(0x5321BF12)
-I (..\..\..\..\..\Include\ble\ble_conn_params.h)(0x5321BF12)
-I (..\..\..\..\..\Include\app_common\hci_mem_pool.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x52FE42FE)
-F (..\..\..\..\..\Source\ble\ble_conn_params.c)(0x537F2B0E)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\ble_conn_params.o --omf_browse .\_build\ble_conn_params.crf --depend .\_build\ble_conn_params.d)
-I (..\..\..\..\..\Include\ble\ble_conn_params.h)(0x5321BF12)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\s110\ble.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_types.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gap.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_err.h)(0x52DD27A6)
+I (..\..\..\..\..\Include\nrf_gpio.h)(0x53B299DE)
+I (..\..\..\..\..\Include\app_common\app_error.h)(0x53B299DC)
+I (..\..\..\..\..\Include\sd_common\softdevice_handler.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5284C88A)
+I (..\..\..\..\..\Include\nordic_common.h)(0x53B299D6)
+I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x53B299DC)
+I (..\..\..\..\..\Include\sd_common\ble_stack_handler_types.h)(0x53B299DA)
+I (..\..\..\..\..\Include\sd_common\ant_stack_handler_types.h)(0x53B299DA)
+I (..\..\..\..\..\Include\ble\ble_advdata.h)(0x53B299EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5284C88A)
+I (..\..\..\..\..\Include\s110\ble_hci.h)(0x53A149A6)
+I (..\..\..\..\..\Include\boards.h)(0x53B299E8)
+I (..\..\..\..\..\Include\boards/nrf6310.h)(0x53B299EA)
+I (..\..\..\..\..\Include\ble\ble_services\ble_dfu.h)(0x53B299E8)
+I (..\..\..\..\..\Include\ble\ble_services\ble_srv_common.h)(0x53B299E8)
+I (..\..\..\..\..\Include\app_common\app_timer.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5284C884)
+I (..\..\..\..\..\Include\ble\ble_flash.h)(0x53B299E8)
+I (..\..\..\..\..\Include\ble\ble_conn_params.h)(0x53B299EA)
+I (..\..\..\..\..\Include\app_common\hci_mem_pool.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5284C88A)
+F (..\..\..\..\..\Source\ble\ble_conn_params.c)(0x53B29974)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\ble_conn_params.o --omf_browse .\_build\ble_conn_params.crf --depend .\_build\ble_conn_params.d)
+I (..\..\..\..\..\Include\ble\ble_conn_params.h)(0x53B299EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (..\..\..\..\..\Include\s110\ble.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_types.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_err.h)(0x53A149A6)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\ble\ble_services\ble_srv_common.h)(0x5321BF12)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\nordic_common.h)(0x5321BF16)
-I (..\..\..\..\..\Include\s110\ble_hci.h)(0x528E92F0)
-I (..\..\..\..\..\Include\app_common\app_timer.h)(0x5321BF10)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x5321BF10)
-F (..\..\..\..\..\Source\ble\ble_advdata.c)(0x5321BF00)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\ble_advdata.o --omf_browse .\_build\ble_advdata.crf --depend .\_build\ble_advdata.d)
-I (..\..\..\..\..\Include\ble\ble_advdata.h)(0x5321BF12)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\s110\ble.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_types.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gap.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_err.h)(0x52DD27A6)
+I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x53A149A6)
+I (..\..\..\..\..\Include\ble\ble_services\ble_srv_common.h)(0x53B299E8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5284C88A)
+I (..\..\..\..\..\Include\nordic_common.h)(0x53B299D6)
+I (..\..\..\..\..\Include\s110\ble_hci.h)(0x53A149A6)
+I (..\..\..\..\..\Include\app_common\app_timer.h)(0x53B299DC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5284C884)
+I (..\..\..\..\..\Include\app_common\app_error.h)(0x53B299DC)
+I (..\..\..\..\..\Include\app_common\app_scheduler.h)(0x53B299DC)
+F (..\..\..\..\..\Source\ble\ble_advdata.c)(0x53B2997A)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\ble_advdata.o --omf_browse .\_build\ble_advdata.crf --depend .\_build\ble_advdata.d)
+I (..\..\..\..\..\Include\ble\ble_advdata.h)(0x53B299EA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5284C88A)
+I (..\..\..\..\..\Include\s110\ble.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_types.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_l2cap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_err.h)(0x53A149A6)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
-I (..\..\..\..\..\Include\nordic_common.h)(0x5321BF16)
-I (..\..\..\..\..\Include\ble\ble_services\ble_srv_common.h)(0x5321BF12)
-F (..\..\..\..\..\Source\ble\ble_services\ble_srv_common.c)(0x5321BEFE)(-c --cpu Cortex-M0 --li -g -O3 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\ble_srv_common.o --omf_browse .\_build\ble_srv_common.crf --depend .\_build\ble_srv_common.d)
-I (..\..\..\..\..\Include\ble\ble_services\ble_srv_common.h)(0x5321BF12)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FE42FE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\s110\ble_types.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\app_common\app_util.h)(0x5321BF10)
-I (..\..\..\..\..\Include\compiler_abstraction.h)(0x5321C01E)
-I (..\..\..\..\..\Include\nrf51.h)(0x5321C01E)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0.h)(0x512C8EE2)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h)(0x51BAC5E4)
-I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h)(0x512C8EE2)
-I (..\..\..\..\..\Include\system_nrf51.h)(0x5321C01E)
-I (..\..\..\..\..\Include\app_common\app_error.h)(0x5321BF10)
+I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gattc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gatts.h)(0x53A149A6)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (..\..\..\..\..\Include\nordic_common.h)(0x53B299D6)
+I (..\..\..\..\..\Include\ble\ble_services\ble_srv_common.h)(0x53B299E8)
+F (..\..\..\..\..\Source\ble\ble_services\ble_srv_common.c)(0x53B29978)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork --enum_is_int -I.. -I..\include -I..\include\ble_transport -I..\..\..\..\..\Include -I..\..\..\..\..\Include\sd_common -I..\..\..\..\..\Include\app_common -I..\..\..\..\..\Include\ble -I..\..\..\..\..\Include\ble\ble_services -I..\..\..\..\..\Include\s110 --c99-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I C:\Keil_v5\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DNRF51 -DDEBUG_NRF_USER -DBOARD_NRF6310 -DBOOTLOADER_BANKED -DBLE_STACK_SUPPORT_REQD -o .\_build\ble_srv_common.o --omf_browse .\_build\ble_srv_common.crf --depend .\_build\ble_srv_common.d)
+I (..\..\..\..\..\Include\ble\ble_services\ble_srv_common.h)(0x53B299E8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5284C88A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5284C88A)
+I (..\..\..\..\..\Include\s110\ble_types.h)(0x53A149A6)
+I (..\..\..\..\..\Include\app_common\app_util.h)(0x53B299DC)
+I (..\..\..\..\..\Include\compiler_abstraction.h)(0x53B29B14)
+I (..\..\..\..\..\Include\s110\ble_gap.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x53A149A6)
+I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x53A149A6)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5284C88A)
+I (..\..\..\..\..\Include\nordic_common.h)(0x53B299D6)
+I (..\..\..\..\..\Include\app_common\app_error.h)(0x53B299DC)
 I (..\..\..\..\..\Include\s110\nrf_error.h)(0x529C6074)
-I (..\..\..\..\..\Include\s110\ble_gap.h)(0x52DD27A6)
-I (..\..\..\..\..\Include\s110\ble_ranges.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\nrf_svc.h)(0x528E92F0)
-I (..\..\..\..\..\Include\s110\ble_gatt.h)(0x528E92F0)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x52FE42FE)
-I (..\..\..\..\..\Include\nordic_common.h)(0x5321BF16)

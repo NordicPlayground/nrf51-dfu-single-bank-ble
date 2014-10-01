@@ -21,10 +21,10 @@
 
 #include <stdint.h>
 
-#define PSTORAGE_FLASH_PAGE_SIZE    ((uint16_t)NRF_FICR->CODEPAGESIZE)   /**< Size of one flash page. */
-#define PSTORAGE_FLASH_EMPTY_MASK    0xFFFFFFFF                          /**< Bit mask that defines an empty address in flash. */
+#define PSTORAGE_FLASH_PAGE_SIZE    ((uint16_t)NRF_FICR->CODEPAGESIZE)                          /**< Size of one flash page. */
+#define PSTORAGE_FLASH_EMPTY_MASK   0xFFFFFFFF                                                  /**< Bit mask that defines an empty address in flash. */
 
-#define PSTORAGE_FLASH_PAGE_END      NRF_FICR->CODESIZE
+#define PSTORAGE_FLASH_PAGE_END     NRF_FICR->CODESIZE
 
 
 #define PSTORAGE_MAX_APPLICATIONS   1                                                           /**< Maximum number of applications that can be registered with the module, configurable based on system requirements. */
@@ -44,17 +44,6 @@
  * only for these special usecases and typically disabled.
  */
 #define PSTORAGE_RAW_MODE_ENABLE
-
-#ifdef PSTORAGE_RAW_ACCESS
-#ifdef S310_STACK
-    #define PSTORAGE_RAW_START_ADDR   0x00020000                                                /**< Start address for Raw access mode, configurable based on use case. */
-#else
-    #define PSTORAGE_RAW_START_ADDR   0x00014000                                                /**< Start address for Raw access mode, configurable based on use case. */
-#endif
-
-#define PSTORAGE_RAW_END_ADDR       0x0003C800                                                  /**< End address for Raw access mode, configurable based on use case. */
-#endif // PSTORAGE_RAW_MODE_ENABLE
-
 
 /** Abstracts persistently memory block identifier. */
 typedef uint32_t pstorage_block_t;

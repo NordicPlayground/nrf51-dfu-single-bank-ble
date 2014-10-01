@@ -41,8 +41,9 @@ uint32_t dfu_init(void);
 /**@brief Function for registering a callback listener for \ref dfu_data_pkt_handle callbacks.
  */
 void dfu_register_callback(dfu_callback_t callback_handler);
+//SINGLEBANK PATCH
 void dfu_register_clear_callback(dfu_callback_t callback_handler);
-
+//END PATCH
 /**@brief Function for setting the DFU image size. 
  *
  * @details Function sets the DFU image size. This function must be called when an update is started 

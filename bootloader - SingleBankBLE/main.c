@@ -35,6 +35,9 @@
 #include <stddef.h>
 #include "nordic_common.h"
 #include "nrf.h"
+#ifndef S310_STACK
+#include "nrf_mbr.h"
+#endif // S310_STACK
 #include "app_error.h"
 #include "nrf_gpio.h"
 #include "nrf51_bitfields.h"
@@ -49,6 +52,8 @@
 #include "ble_debug_assert_handler.h"
 #include "softdevice_handler.h"
 #include "pstorage_platform.h"
+
+#define IS_SRVC_CHANGED_CHARACT_PRESENT 0                                                       /**< Include or not the service_changed characteristic. if not enabled, the server's database cannot be changed for the lifetime of the device*/
 
 #define BOOTLOADER_BUTTON_PIN           BUTTON_7                                                /**< Button used to enter SW update mode. */
 
@@ -183,8 +188,27 @@ static void sys_evt_dispatch(uint32_t event)
 static void ble_stack_init(void)
 {
     uint32_t err_code;
-    
+
+#ifndef S310_STACK
+    sd_mbr_command_t com = {SD_MBR_COMMAND_INIT_SD, };
+
+    err_code = sd_mbr_command(&com);
+    APP_ERROR_CHECK(err_code);
+
+    err_code = sd_softdevice_vector_table_base_set(BOOTLOADER_REGION_START);
+    APP_ERROR_CHECK(err_code);
+#endif // S310_STACK
+
     SOFTDEVICE_HANDLER_INIT(NRF_CLOCK_LFCLKSRC_XTAL_20_PPM, true);
+
+#ifndef S310_STACK
+    // Enable BLE stack 
+    ble_enable_params_t ble_enable_params;
+    memset(&ble_enable_params, 0, sizeof(ble_enable_params));
+    ble_enable_params.gatts_enable_params.service_changed = IS_SRVC_CHANGED_CHARACT_PRESENT;
+    err_code = sd_ble_enable(&ble_enable_params);
+    APP_ERROR_CHECK(err_code);
+#endif // S310_STACK
 
     err_code = softdevice_sys_evt_handler_set(sys_evt_dispatch);
     APP_ERROR_CHECK(err_code);
@@ -198,6 +222,7 @@ static void scheduler_init(void)
     APP_SCHED_INIT(SCHED_MAX_EVENT_DATA_SIZE, SCHED_QUEUE_SIZE);
 }
 
+
 /**@brief Function for application main entry.
  */
 int main(void)
@@ -207,13 +232,9 @@ int main(void)
     
     leds_init();
 
-    // This check ensures that the defined fields in the bootloader corresponds with actual
-    // setting in the nRF51 chip.
-    APP_ERROR_CHECK_BOOL(NRF_UICR->CLENR0 == CODE_REGION_1_START);
-
     APP_ERROR_CHECK_BOOL(*((uint32_t *)NRF_UICR_BOOT_START_ADDRESS) == BOOTLOADER_REGION_START);
     APP_ERROR_CHECK_BOOL(NRF_FICR->CODEPAGESIZE == CODE_PAGE_SIZE);
-		
+
     // Initialize.
     timers_init();
     gpiote_init();

@@ -266,7 +266,12 @@ void bootloader_app_start(uint32_t app_addr)
 
     interrupts_disable();
 
+#ifdef S310_STACK
     err_code = sd_softdevice_forward_to_application();
+#else
+    err_code = sd_softdevice_vector_table_base_set(CODE_REGION_1_START);
+#endif 
+
     APP_ERROR_CHECK(err_code);
 
     bootloader_util_app_start(CODE_REGION_1_START);

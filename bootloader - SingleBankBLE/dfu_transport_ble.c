@@ -115,12 +115,10 @@ static void dfu_cb_handler(uint32_t result, uint8_t * p_data)
     else
     {
         uint32_t err_code = hci_mem_pool_rx_consume(p_data);
-	
-
         APP_ERROR_CHECK(err_code);
     }
 }
-  
+    
 
 /**@brief     Function to convert an nRF51 error code to a DFU Response Value.
  *
@@ -196,6 +194,7 @@ static void dfu_clear_cb_handler(uint32_t result, uint8_t * p_data)
     }
 } 
 //END PATCH
+
 /**@brief     Function for notifying a DFU Controller about error conditions in the DFU module.
  *            This function also ensures that an error is translated from nrf_errors to DFU Response 
  *            Value.
@@ -208,19 +207,13 @@ static void dfu_error_notify(ble_dfu_t * p_dfu, uint32_t err_code)
     // An error has occurred. Notify the DFU Controller about this error condition.
     // Translate the err_code returned to DFU Response Value.
     ble_dfu_resp_val_t resp_val;
-   
-		
-
-	
+    
     resp_val = nrf_error_to_dfu_resp_val(err_code, BLE_DFU_RECEIVE_APP_PROCEDURE);
     
     err_code = ble_dfu_response_send(p_dfu,
                                      BLE_DFU_RECEIVE_APP_PROCEDURE,
                                      resp_val);
-  
-	
-  
-	APP_ERROR_CHECK(err_code);
+    APP_ERROR_CHECK(err_code);
 }
 
 
@@ -248,8 +241,8 @@ static void start_data_process(ble_dfu_t * p_dfu, ble_dfu_evt_t * p_evt)
         uint32_t image_size = uint32_decode(p_evt->evt.ble_dfu_pkt_write.p_data);
 
         err_code = dfu_image_size_set(image_size);
-			
-			//SINGLEBANK PATCH: This code was commentted out to skip sending notification back to central and wait untill the bank1 erase command to finish. 
+
+//SINGLEBANK PATCH: This code was commentted out to skip sending notification back to central and wait untill the bank1 erase command to finish. 
      
 			/*
         ble_dfu_resp_val_t resp_val;
@@ -260,8 +253,7 @@ static void start_data_process(ble_dfu_t * p_dfu, ble_dfu_evt_t * p_evt)
                                          BLE_DFU_START_PROCEDURE,
                                          resp_val);*/
 			//END PATCH
-  
-				APP_ERROR_CHECK(err_code);
+        APP_ERROR_CHECK(err_code);
     }
 }
 
@@ -337,6 +329,7 @@ static void app_data_process(ble_dfu_t * p_dfu, ble_dfu_evt_t * p_evt)
     }
 
     uint32_t length = p_evt->evt.ble_dfu_pkt_write.len;
+    
     err_code = hci_mem_pool_rx_produce(length, (void**) &mp_rx_buffer);
     if (err_code != NRF_SUCCESS)
     {
@@ -353,7 +346,7 @@ static void app_data_process(ble_dfu_t * p_dfu, ble_dfu_evt_t * p_evt)
         dfu_error_notify(p_dfu, err_code);
         return;
     }
-		
+
     err_code = hci_mem_pool_rx_extract(&mp_rx_buffer, &length);
     if (err_code != NRF_SUCCESS)
     {

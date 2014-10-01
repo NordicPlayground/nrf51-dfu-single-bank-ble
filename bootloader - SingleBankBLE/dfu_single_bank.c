@@ -24,6 +24,7 @@
 #include "nrf51.h"
 #include "nrf51_bitfields.h"
 #include "pstorage.h"
+
 /**@brief States of the DFU state machine. */
 typedef enum
 {
@@ -45,7 +46,9 @@ static uint32_t                m_received_data;              /**< Amount of rece
 static pstorage_handle_t       m_storage_handle_app;
 static pstorage_module_param_t m_storage_module_param;
 static dfu_callback_t          m_data_pkt_cb;
+//SINGLEBANK PATCH
 static dfu_callback_t          m_data_clear_cb;
+//END PATCH
 
 #define IMAGE_WRITE_IN_PROGRESS() (m_received_data > 0)      /**< Macro for determining is image write in progress. */
 
@@ -108,10 +111,12 @@ void dfu_register_callback(dfu_callback_t callback_handler)
 {
     m_data_pkt_cb = callback_handler;
 }
+//SINGLEBANK PATCH
 void dfu_register_clear_callback(dfu_callback_t callback_handler)
 {
     m_data_clear_cb = callback_handler;
 }
+// END PATCH
 
 uint32_t dfu_image_size_set(uint32_t image_size)
 {
@@ -134,19 +139,21 @@ uint32_t dfu_image_size_set(uint32_t image_size)
     switch (m_dfu_state)
     {
         case DFU_STATE_IDLE:
-
             err_code = pstorage_raw_clear(&m_storage_handle_app, image_size);
             if (err_code != NRF_SUCCESS)
             {
                 return err_code;
             }
-						
-						err_code = 0;
+
             m_received_data           = 0;
             m_image_size              = image_size;
-            //m_dfu_state               = DFU_STATE_RDY;
-            update_status.status_code = DFU_BANK_0_ERASED;
             
+						
+            update_status.status_code = DFU_BANK_0_ERASED;
+						//SINGLEBANK PATCH
+            err_code = 0;
+						//m_dfu_state               = DFU_STATE_RDY;
+						//END PATCH
             bootloader_dfu_update_process(update_status);                    
             break;
             
@@ -202,7 +209,7 @@ uint32_t dfu_data_pkt_handle(dfu_update_packet_t * p_packet)
             {
                 return err_code;
             }
-            m_received_data += data_length;   
+            m_received_data += data_length;        
 						
 						// SINGLEBANK PATCH: added so that it will return NRF_ERROR_INVALID_LENGTH instead of NRF_SUCCESS if the full image is not received. 
             if (m_received_data != m_image_size)
