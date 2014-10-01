@@ -1,9 +1,9 @@
 nRF51-SingleBankDFU-BLE
 =======================
 
-Single bank bootloader for DFU over BLE (nRF51, S110 v6.x)
+Single bank bootloader for DFU over BLE (nRF51, S110 v7.x)
 
-Based on the dual bank BLE bootloader example in SDKv5.2.0.
+Based on the dual bank BLE bootloader example in SDKv6.0.
 
 Modification added to use the dfu_single_bank.c 
 Please look for the comments "SINGLEBANK PATCH" in the code
