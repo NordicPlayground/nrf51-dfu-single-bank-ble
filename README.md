@@ -1,7 +1,7 @@
-nRF51QFAB-SingleBankDFU-BLE
+nRF51-SingleBankDFU-BLE
 =======================
 
-Single bank bootloader for DFU over BLE (nRF51, S110 v7.x). It it compatible with the nRF51QFAB chip which has 128kB flash memory. The bootloader can also run on the 256kB nRF51QFAA variant but flash space available for the application is limited to 26kB in order to fit to the nRF51QFAB variant as well.
+Single bank bootloader for DFU over BLE (nRF51, S110 v7.x)
 
 Based on the dual bank BLE bootloader example in SDKv6.0.
 
@@ -19,7 +19,7 @@ Requirements
 ------------
 - nRF51 SDK version 6.0
 - S110 v7.0
-- nRF51822 Development Kit version 2.1.0 or later.
+- nRF51822 Development Kit version 2.1.0 or later
 
 The project may need modifications to work with other versions or other boards. 
 
