@@ -1,7 +1,7 @@
 nRF51QFAB-SingleBankDFU-BLE
 =======================
 
-Single bank bootloader for DFU over BLE (nRF51, S110 v7.x). It it compatible with the nRF51QFAB chip which has 128kB flash memory. The bootloader can also run on the 256kB nRF51QFAA variant but flash space available for the application is limited to 26kB in order to fit to the nRF51QFAB variant as well.
+Single bank bootloader for DFU over BLE (nRF51, S110 v7.x). It it compatible with the nRF51QFAB chip which has 128kB flash memory. The bootloader can also run on the 256kB nRF51QFAA variant but flash space available for the application is limited to 26kB in order to fit to the nRF51QFAB variant as well. Note that 1 flash page (1kB) is reserved of the application space for the PSTORAGE swap area and another flash page is reserved for the bonding information. So for the compressed bootloader of 14kB, where 26kB are left for the application, only 24kB are actually usable, so the application size can be maximum 24kB. If the application stores data in flash, you must reserve application flash space for that additionally. 
 
 Based on the dual bank BLE bootloader example in SDKv6.0.
 
