@@ -25,6 +25,8 @@
 #include "pstorage.h"
 #include "app_scheduler.h"
 
+#include "nrf_gpio.h"    //Stefan
+
 #define IRQ_ENABLED             0x01                    /**< Field identifying if an interrupt is enabled. */
 #define MAX_NUMBER_INTERRUPTS   32                      /**< Maximum number of interrupts available. */
 
@@ -86,24 +88,30 @@ static void wait_for_events(void)
 bool bootloader_app_is_valid(uint32_t app_addr)
 {
     const bootloader_settings_t * p_bootloader_settings;
-
+	
     // There exists an application in CODE region 1.
     if (DFU_BANK_0_REGION_START == EMPTY_FLASH_MASK)
     {
+			
         return false;
     }
     
+		
+		
     bool success = false;
     
     switch (app_addr)
     {
         case DFU_BANK_0_REGION_START:
+					nrf_gpio_pin_set(12);   //Stefan
             bootloader_util_settings_get(&p_bootloader_settings);
 
             // The application in CODE region 1 is flagged as valid during update.
             if (p_bootloader_settings->bank_0 == BANK_VALID_APP)
             {
                 uint16_t image_crc = 0;
+							
+								nrf_gpio_pin_set(13);   //Stefan
 
                 // A stored crc value of 0 indicates that CRC checking is not used.
                 if (p_bootloader_settings->bank_0_crc != 0)
@@ -111,13 +119,17 @@ bool bootloader_app_is_valid(uint32_t app_addr)
                     image_crc = crc16_compute((uint8_t*)DFU_BANK_0_REGION_START,
                                               p_bootloader_settings->bank_0_size,
                                               NULL);
+									nrf_gpio_pin_set(14);  //Stefan
                 }
 
                 success = (image_crc == p_bootloader_settings->bank_0_crc);
+								
+								
             }
             break;
             
         case DFU_BANK_1_REGION_START:
+					
         default:
             // No implementation needed.
             break;

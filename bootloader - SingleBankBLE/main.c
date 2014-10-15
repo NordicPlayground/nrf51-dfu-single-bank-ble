@@ -69,6 +69,8 @@
 
 #define SCHED_QUEUE_SIZE                20                                                      /**< Maximum number of events in the scheduler queue. */
 
+#define BOOTLOADER_DFU_START 0xB1
+
 
 /**@brief Function for error handling, which is called when an error has occurred. 
  *
@@ -122,7 +124,13 @@ static void leds_init(void)
     nrf_gpio_cfg_output(LED_0);
     nrf_gpio_cfg_output(LED_1);
     nrf_gpio_cfg_output(LED_2);
-    nrf_gpio_cfg_output(LED_7);
+	
+		nrf_gpio_cfg_output(LED_3);  //Stefan
+		nrf_gpio_cfg_output(LED_4);
+		nrf_gpio_cfg_output(LED_5);
+		nrf_gpio_cfg_output(LED_6);
+    
+		nrf_gpio_cfg_output(LED_7);
 }
 
 
@@ -180,39 +188,33 @@ static void sys_evt_dispatch(uint32_t event)
     pstorage_sys_event_handler(event);
 }
 
-
-/**@brief Function for initializing the BLE stack.
- *
- * @details Initializes the SoftDevice and the BLE event interrupt.
- */
-static void ble_stack_init(void)
+static void ble_stack_init(bool init_softdevice)
 {
-    uint32_t err_code;
-
-#ifndef S310_STACK
+    uint32_t         err_code;
     sd_mbr_command_t com = {SD_MBR_COMMAND_INIT_SD, };
 
-    err_code = sd_mbr_command(&com);
-    APP_ERROR_CHECK(err_code);
-
+    if (init_softdevice)
+    {
+        err_code = sd_mbr_command(&com);
+        APP_ERROR_CHECK(err_code);
+    }
+    
     err_code = sd_softdevice_vector_table_base_set(BOOTLOADER_REGION_START);
     APP_ERROR_CHECK(err_code);
-#endif // S310_STACK
-
+   
     SOFTDEVICE_HANDLER_INIT(NRF_CLOCK_LFCLKSRC_XTAL_20_PPM, true);
 
-#ifndef S310_STACK
     // Enable BLE stack 
     ble_enable_params_t ble_enable_params;
     memset(&ble_enable_params, 0, sizeof(ble_enable_params));
     ble_enable_params.gatts_enable_params.service_changed = IS_SRVC_CHANGED_CHARACT_PRESENT;
     err_code = sd_ble_enable(&ble_enable_params);
     APP_ERROR_CHECK(err_code);
-#endif // S310_STACK
-
+    
     err_code = softdevice_sys_evt_handler_set(sys_evt_dispatch);
     APP_ERROR_CHECK(err_code);
 }
+
 
 
 /**@brief Function for event scheduler initialization.
@@ -228,7 +230,9 @@ static void scheduler_init(void)
 int main(void)
 {
     uint32_t err_code;
-    bool     bootloader_is_pushed = false;
+    //bool     bootloader_is_pushed = false;
+	  bool     dfu_start = false;
+    bool     app_reset = (NRF_POWER->GPREGRET == BOOTLOADER_DFU_START);
     
     leds_init();
 
@@ -239,12 +243,13 @@ int main(void)
     timers_init();
     gpiote_init();
     buttons_init();
-    ble_stack_init();
+    ble_stack_init(!app_reset);
     scheduler_init();
 
-    bootloader_is_pushed = ((nrf_gpio_pin_read(BOOTLOADER_BUTTON_PIN) == 0)? true: false);
-    
-    if (bootloader_is_pushed || (!bootloader_app_is_valid(DFU_BANK_0_REGION_START)))
+		dfu_start  = app_reset;
+    dfu_start |= ((nrf_gpio_pin_read(BOOTLOADER_BUTTON_PIN) == 0) ? true: false);
+		
+    if (dfu_start || (!bootloader_app_is_valid(DFU_BANK_0_REGION_START)))
     {
         nrf_gpio_pin_set(LED_2);
 
