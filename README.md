@@ -17,7 +17,7 @@ Tested with Android nRFToolbox, nRFMaster Control Panel, iOS Loader, iOS nRFTool
 
 Requirements
 ------------
-- nRF51 SDK version 6.0
+- nRF51 SDK version 6.0.0 or 6.1.0
 - S110 v7.0
 - nRF51822 Development Kit version 2.1.0 or later.
 
