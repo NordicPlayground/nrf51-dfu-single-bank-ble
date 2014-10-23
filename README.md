@@ -13,7 +13,7 @@ The master would need to wait until the peripheral finishes deleting the pages a
 This causes the DFU on the Master Control Panel PC app incompatible. Because it doesn't wait for the notification after sending image size.
 Modification needed on the PC software to wait at least 10 seconds before sending image data, or wait for the notification as in the Android app or iOS app. 
 
-Tested with Android nRFToolbox, nRFMaster Control Panel, iOS Loader, iOS nRFToolbox
+Tested with Android nRFToolbox v1.10.0, iOS nRFToolbox v1.3 
 
 Requirements
 ------------
