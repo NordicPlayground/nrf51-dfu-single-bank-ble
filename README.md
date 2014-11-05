@@ -1,4 +1,4 @@
-nRF51-SingleBankDFU-BLE
+nrf51-dfu-single-bank-ble
 =======================
 
 Single bank bootloader for DFU over BLE (nRF51, S110 v7.x)
