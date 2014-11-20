@@ -92,7 +92,7 @@ static bool                                m_pkt_rcpt_notif_enabled       = fals
 static uint16_t                            m_conn_handle                  = BLE_CONN_HANDLE_INVALID; /**< Handle of the current connection. */
 static bool                                m_is_advertising               = false;                   /**< Variable to indicate if advertising is ongoing.*/
 static uint8_t                           * mp_rx_buffer;
-
+static uint32_t 														imagesize_check;
 
 /**@brief       Function for handling the callback events from the dfu module.
  *              Callbacks are expected when \ref dfu_data_pkt_handle has been executed.
@@ -185,7 +185,7 @@ static void dfu_clear_cb_handler(uint32_t result, uint8_t * p_data)
 		
 				ble_dfu_resp_val_t resp_val;
 
-        resp_val = nrf_error_to_dfu_resp_val(err_code, BLE_DFU_START_PROCEDURE);
+        resp_val = nrf_error_to_dfu_resp_val(imagesize_check, BLE_DFU_START_PROCEDURE); //Notify back if the image size is OK or not. 
 
         err_code = ble_dfu_response_send(&m_dfu,
                                          BLE_DFU_START_PROCEDURE,
@@ -240,7 +240,7 @@ static void start_data_process(ble_dfu_t * p_dfu, ble_dfu_evt_t * p_evt)
         // Extract the size of from the DFU Packet Characteristic.
         uint32_t image_size = uint32_decode(p_evt->evt.ble_dfu_pkt_write.p_data);
 
-        err_code = dfu_image_size_set(image_size);
+        imagesize_check = dfu_image_size_set(image_size);
 
 //SINGLEBANK PATCH: This code was commentted out to skip sending notification back to central and wait untill the bank1 erase command to finish. 
      
@@ -251,9 +251,12 @@ static void start_data_process(ble_dfu_t * p_dfu, ble_dfu_evt_t * p_evt)
 
         err_code = ble_dfu_response_send(p_dfu,
                                          BLE_DFU_START_PROCEDURE,
-                                         resp_val);*/
+                                         resp_val);
+			APP_ERROR_CHECK(err_code);
+			*/
+			
 			//END PATCH
-        APP_ERROR_CHECK(err_code);
+        
     }
 }
 
