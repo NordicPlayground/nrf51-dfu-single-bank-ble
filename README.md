@@ -2,6 +2,8 @@ nrf51-dfu-single-bank-ble
 =======================
 
 NOTE: FROM SDK v9.0 TO HAVE SINGLE BANK DFU YOU CAN SIMPLY REPLACE dfu_dual_bank.c with dfu_single_bank.c. APPLICATION, BOOTLOADER, SOFTDEVICE UPDATE SHOULD WORK. 
+
+
 ------------
 Single bank bootloader for DFU over BLE (nRF51, S110 v7.x)
 
